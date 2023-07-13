@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HỌC LẠI THOI</title>
+  </head>
+  <body>
+    <a href="https://www.facebook.com/77VNNTUV1103?mibextid=ZbWKwL"
+      >Liên lạc với tôi qua FB</a
+    >
+
+    <div class="header">
+      <h1 class="nameshop">SUPPER CAR TOP1 THE WORD</h1>
+    </div>
+
+    <nav>
+      <ul class="navs">
+        <li><a href="#home">Trang Chủ</a></li>
+        <li><a href="#about">Giới Thiệu</a></li>
+        <li><a href="#services">Dịch Vụ</a></li>
+        <li><a href="#contact">Liên Hệ</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <h2 class="title">SUPPERS CAR</h2>
+      <div class="product-container" >
+        <div class="product">
+          <img src="https://thuviensachmoi.files.wordpress.com/2019/03/56ce6-hinh-nen-sieu-xe-dep-1.jpg" alt="Car 1" />
+          <h3>Super Car 1</h3>
+          <p>Price: $100,000</p>
+        </div>
+
+        <div class="product">
+          <img src="https://png.pngtree.com/background/20230412/original/pngtree-car-factory-neon-lights-with-sports-car-photography-advertising-background-picture-image_2401266.jpg" alt="Car 1" />
+          <h3>Super Car 1</h3>
+          <p>Price: $100,000</p>
+        </div>
+
+        <div class="product">
+          <img  src="https://png.pngtree.com/background/20230519/original/pngtree-bmw-supercar-and-car-concept-picture-image_2665897.jpg" alt="Car 1" />
+          <h3>Super Car 1</h3>
+          <p>Price: $100,000</p>
+        </div>
+
+        <div class="product">
+          <img  src="https://png.pngtree.com/thumb_back/fw800/background/20230519/pngtree-the-concept-bmw-vehicle-that-s-designed-after-the-bmw-iaea-image_2577391.png" alt="Car 1" />
+          <h3>Super Car 1</h3>
+          <p>Price: $100,000</p>
+        </div>
+
+        <div class="product">
+          <img  src="https://allimages.sgp1.digitaloceanspaces.com/tipeduvn/2022/08/1661508343_213_Top-hinh-nen-BMW-dep-dong-xe-sieu-sang-cua.jpg" alt="Car 1" />
+          <h3>Super Car 1</h3>
+          <p>Price: $100,000</p>
+        </div>
+
+        <div class="product">
+          <img  src="https://allimages.sgp1.digitaloceanspaces.com/tipeduvn/2022/08/1661508157_767_Top-hinh-nen-BMW-dep-dong-xe-sieu-sang-cua.jpg" alt="Car 1" />
+          <h3>Super Car 1</h3>
+          <p>Price: $100,000</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var header = document.querySelector(".header");
+      var images = [
+        "https://pinxedapdien.com.vn/wp-content/uploads/hinh-nen-sieu-xe-lamborghini_062151335.jpg",
+        "https://thptlocthai.edu.vn/wp-content/uploads/2023/03/b00d0cdbf06fab3b2d8cc6847a014495.jpg",
+        "https://thuviensachmoi.files.wordpress.com/2019/03/5d533-hinh-nen-sieu-xe-cuc-dinh-15.jpg",
+        "https://wallpapers.com/images/hd/flaming-lamborghini-aventador-aeanaudbova6y4aw.jpg",
+      ];
+      var currentImage = 0;
+
+      function changeBackground() {
+        currentImage = (currentImage + 1) % images.length;
+        header.style.backgroundImage = 'url("' + images[currentImage] + '")';
+      }
+
+      setInterval(changeBackground, 3000);
+    </script>
+  </body>
+</html>
