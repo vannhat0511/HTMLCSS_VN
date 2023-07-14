@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SERVICES_77</title>
-    <link rel="stylesheet" href="services.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="services.css">
+    <style>
+        .product {
+            display: inline-block;
+            width: 45%;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
     <div class="header">
-      <h1 class="title">
-        <span>S</span><span>E</span><span>R</span><span>V</span><span>I</span
-        ><span>C</span><span>E</span><span>S</span>
-      </h1>
+        <h1 class="title">
+            <span>S</span><span>E</span><span>R</span><span>V</span><span>I</span><span>C</span><span>E</span><span>S</span>
+        </h1>
     </div>
 
     <nav>
-      <ul class="menu">
-        <li class="item">
-          Supper CAR
-          <ul class="submenu">
-            <li class="subitem">Ferrari</li>
-            <li class="subitem">Lamborghini</li>
-            <li class="subitem">BMW</li>
-          </ul>
-        </li>
-        <li class="item">
-          Supper MotoBike
-          <ul class="submenu">
-            <li class="subitem">Ferrari</li>
-            <li class="subitem">Lamborghini</li>
-            <li class="subitem">BMW</li>
-          </ul>
-        </li>
+        <ul class="menu">
+            <li class="item">
+                Supper CAR
+                <ul class="submenu">
+                    <li class="subitem" data-category="ferrari">Ferrari</li>
+                    <li class="subitem" data-category="lamborghini">Lamborghini</li>
+                    <li class="subitem" data-category="bmw">BMW</li>
+                </ul>
+            </li>
+            <li class="item">
+                Supper MotoBike
+                <ul class="submenu">
+                    <li class="subitem" data-category="harley">Harley-Davidson</li>
+                    <li class="subitem" data-category="triumph">Triumph</li>
+                    <li class="subitem" data-category="enfield">Royal Enfield</li>
+                </ul>
+            </li>
 
-        <li class="item">
-          Supper Bicycle
-          <ul class="submenu">
-            <li class="subitem">Ferrari</li>
-            <li class="subitem">Lamborghini</li>
-            <li class="subitem">BMW</li>
-          </ul>
-        </li>
-      </ul>
+            <li class="item">
+                Supper Bicycle
+                <ul class="submenu">
+                    <li class="subitem" data-category="merida">Merida</li>
+                    <li class="subitem" data-category="trek">Trek</li>
+                    <li class="subitem" data-category="kona">Kona</li>
+                </ul>
+            </li>
+        </ul>
     </nav>
 
     <div class="show">
@@ -79,18 +88,16 @@
         dấu ấn đầy ấn tượng. Với khung xe nhẹ nhưng vững chãi, nó cung cấp sự ổn
         định và khả năng tăng tốc nhanh chóng, mang lại cho bạn một trải nghiệm
         lái mượt mà và tốc độ đáng kinh ngạc.<br />
-        <br />Chiếc xe
-        đạp sang trọng tốc độ không chỉ là phương tiện di chuyển, mà còn là biểu
-        tượng của phong cách sống năng động và đẳng cấp. Với khả năng vượt qua
-        mọi địa hình và đạt được tốc độ cao, nó thực sự là người bạn đồng hành
-        hoàn hảo cho những ai yêu thích sự thể thao và đam mê chinh phục.
-        <br /><br />Hãy trải nghiệm sự tinh tế và sự đẳng cấp của chiếc xe đạp
-        sang trọng tốc độ. Hãy cảm nhận sự tự do và cảm giác hưng phấn khi cắt
-        qua không gian với tốc độ đáng kinh ngạc. Đó là không chỉ là một phương
-        tiện di chuyển, mà còn là một biểu tượng của sức mạnh và phong cách độc
-        đáo của bạn.
+        <br />Chiếc xe đạp sang trọng tốc độ không chỉ là phương tiện di chuyển,
+        mà còn là biểu tượng của phong cách sống năng động và đẳng cấp. Với khả
+        năng vượt qua mọi địa hình và đạt được tốc độ cao, nó thực sự là người
+        bạn đồng hành hoàn hảo cho những ai yêu thích sự thể thao và đam mê
+        chinh phục. <br /><br />Hãy trải nghiệm sự tinh tế và sự đẳng cấp của
+        chiếc xe đạp sang trọng tốc độ. Hãy cảm nhận sự tự do và cảm giác hưng
+        phấn khi cắt qua không gian với tốc độ đáng kinh ngạc. Đó là không chỉ
+        là một phương tiện di chuyển, mà còn là một biểu tượng của sức mạnh và
+        phong cách độc đáo của bạn.
       </div>
-      
     </div>
 
     <div class="show">
@@ -105,12 +112,170 @@
         phai nhạt.
       </div>
     </div>
-  </body>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-  // Code JavaScript khác ở đây (nếu cần)
-});
-</script>
-  
-  
+
+    <div class="show" id="ferrari-products" style="display: none">
+      <!-- Hiển thị sản phẩm Ferrari -->
+      <div class="product">
+        <h2>Ferrari</h2>
+        <p>Mô tả sản phẩm Ferrari...</p>
+        <p>Giá xe: $1,000,000</p>
+        <p>Đánh giá: ★★★★☆</p>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV2S_TQZ3qI-lFnAizieRD67b-s4oPbfV9JA&usqp=CAU"
+          alt="Ferrari Product"
+        />
+      </div>
+      <div class="product">
+        <h2>Ferrari</h2>
+        <p>Mô tả sản phẩm Ferrari...</p>
+        <p>Giá xe: $1,000,000</p>
+        <p>Đánh giá: ★★★★☆</p>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV2S_TQZ3qI-lFnAizieRD67b-s4oPbfV9JA&usqp=CAU"
+          alt="Ferrari Product"
+        />
+      </div>
+      <div class="product">
+        <h2>Ferrari</h2>
+        <p>Mô tả sản phẩm Ferrari...</p>
+        <p>Giá xe: $1,000,000</p>
+        <p>Đánh giá: ★★★★☆</p>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV2S_TQZ3qI-lFnAizieRD67b-s4oPbfV9JA&usqp=CAU"
+          alt="Ferrari Product"
+        />
+      </div>
+      <div class="product">
+        <h2>Ferrari</h2>
+        <p>Mô tả sản phẩm Ferrari...</p>
+        <p>Giá xe: $1,000,000</p>
+        <p>Đánh giá: ★★★★☆</p>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV2S_TQZ3qI-lFnAizieRD67b-s4oPbfV9JA&usqp=CAU"
+          alt="Ferrari Product"
+        />
+      </div>
+      <div class="product">
+        <h2>Ferrari</h2>
+        <p>Mô tả sản phẩm Ferrari...</p>
+        <p>Giá xe: $1,000,000</p>
+        <p>Đánh giá: ★★★★☆</p>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV2S_TQZ3qI-lFnAizieRD67b-s4oPbfV9JA&usqp=CAU"
+          alt="Ferrari Product"
+        />
+      </div>
+    </div>
+
+    <div class="show" id="lamborghini-products" style="display: none">
+      <!-- Hiển thị sản phẩm Lamborghini -->
+      <div class="product">
+        <h2>Lamborghini</h2>
+        <p>Mô tả sản phẩm Lamborghini...</p>
+        <p>Giá xe: $900,000</p>
+        <p>Đánh giá: ★★★☆☆</p>
+        <img
+          src="https://luatduongbo.vn/wp-content/uploads/2022/04/Sieu-xe-o-to-1-e1650354261680.jpg"
+          alt="Lamborghini Product"
+        />
+      </div>
+      <div class="product">
+        <h2>Lamborghini</h2>
+        <p>Mô tả sản phẩm Lamborghini...</p>
+        <p>Giá xe: $900,000</p>
+        <p>Đánh giá: ★★★☆☆</p>
+        <img
+          src="https://luatduongbo.vn/wp-content/uploads/2022/04/Sieu-xe-o-to-1-e1650354261680.jpg"
+          alt="Lamborghini Product"
+        />
+      </div>
+      <div class="product">
+        <h2>Lamborghini</h2>
+        <p>Mô tả sản phẩm Lamborghini...</p>
+        <p>Giá xe: $900,000</p>
+        <p>Đánh giá: ★★★☆☆</p>
+        <img
+          src="https://luatduongbo.vn/wp-content/uploads/2022/04/Sieu-xe-o-to-1-e1650354261680.jpg"
+          alt="Lamborghini Product"
+        />
+      </div>
+      <div class="product">
+        <h2>Lamborghini</h2>
+        <p>Mô tả sản phẩm Lamborghini...</p>
+        <p>Giá xe: $900,000</p>
+        <p>Đánh giá: ★★★☆☆</p>
+        <img
+          src="https://luatduongbo.vn/wp-content/uploads/2022/04/Sieu-xe-o-to-1-e1650354261680.jpg"
+          alt="Lamborghini Product"
+        />
+      </div>
+
+    </div>
+
+    <div class="show" id="bmw-products" style="display: none">
+      <!-- Hiển thị sản phẩm BMW -->
+      <div class="product">
+        <h2>BMW</h2>
+        <p>Mô tả sản phẩm BMW...</p>
+        <p>Giá xe: $800,000</p>
+        <p>Đánh giá: ★★☆☆☆</p>
+        <img
+          src="https://photo-cms-tpo.epicdn.me/w890/Uploaded/2023/anijt/2019_01_31/ferrari_monza_sp2_sieu_xe_dep_nhat_the_gioi_nam_2018_SKDB.jpg"
+          alt="BMW Product"
+        />
+      </div>
+      <div class="product">
+        <h2>BMW</h2>
+        <p>Mô tả sản phẩm BMW...</p>
+        <p>Giá xe: $800,000</p>
+        <p>Đánh giá: ★★☆☆☆</p>
+        <img
+          src="https://photo-cms-tpo.epicdn.me/w890/Uploaded/2023/anijt/2019_01_31/ferrari_monza_sp2_sieu_xe_dep_nhat_the_gioi_nam_2018_SKDB.jpg"
+          alt="BMW Product"
+        />
+      </div>
+      <div class="product">
+        <h2>BMW</h2>
+        <p>Mô tả sản phẩm BMW...</p>
+        <p>Giá xe: $800,000</p>
+        <p>Đánh giá: ★★☆☆☆</p>
+        <img
+          src="https://photo-cms-tpo.epicdn.me/w890/Uploaded/2023/anijt/2019_01_31/ferrari_monza_sp2_sieu_xe_dep_nhat_the_gioi_nam_2018_SKDB.jpg"
+          alt="BMW Product"
+        />
+      </div>
+      <div class="product">
+        <h2>BMW</h2>
+        <p>Mô tả sản phẩm BMW...</p>
+        <p>Giá xe: $800,000</p>
+        <p>Đánh giá: ★★☆☆☆</p>
+        <img
+          src="https://photo-cms-tpo.epicdn.me/w890/Uploaded/2023/anijt/2019_01_31/ferrari_monza_sp2_sieu_xe_dep_nhat_the_gioi_nam_2018_SKDB.jpg"
+          alt="BMW Product"
+        />
+      </div>
+      <div class="product">
+        <h2>BMW</h2>
+        <p>Mô tả sản phẩm BMW...</p>
+        <p>Giá xe: $800,000</p>
+        <p>Đánh giá: ★★☆☆☆</p>
+        <img
+          src="https://photo-cms-tpo.epicdn.me/w890/Uploaded/2023/anijt/2019_01_31/ferrari_monza_sp2_sieu_xe_dep_nhat_the_gioi_nam_2018_SKDB.jpg"
+          alt="BMW Product"
+        />
+      </div>
+      <div class="product">
+        <h2>BMW</h2>
+        <p>Mô tả sản phẩm BMW...</p>
+        <p>Giá xe: $800,000</p>
+        <p>Đánh giá: ★★☆☆☆</p>
+        <img
+          src="https://photo-cms-tpo.epicdn.me/w890/Uploaded/2023/anijt/2019_01_31/ferrari_monza_sp2_sieu_xe_dep_nhat_the_gioi_nam_2018_SKDB.jpg"
+          alt="BMW Product"
+        />
+      </div>
+    </div>
+
+    <script src="services.js"></script>
+</body>
 </html>
